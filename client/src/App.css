@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  header a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  header a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Profile Page Styles */
+  .profile-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  
+  .profile-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-list-container {
+    padding: 20px;
+    background-color: white; /* Background color */
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .sort-label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .sort-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  .project-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columns layout with space between */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-title {
+    color: #E2725B; /* Accent color */
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .project-description {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .project-rating {
+    font-size: 0.9em;
+    color: #777;
+  }
