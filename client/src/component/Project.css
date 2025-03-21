@@ -1,0 +1,267 @@
+.card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+    background-color: #FFDAD1;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+  padding: 15px;
+  }
+  
+  .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #E2725B;
+  }
+  
+  .card-description {
+  font-size: 1rem;
+  color: #1E1F24;
+  color: #555;
+  margin-bottom: 10px;
+  }
+  
+  .card-author {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #555;
+  }
+  
+  .card-commentRating {
+  padding: 10px 15px;
+  }
+  
+  .card-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E2725B;
+  }
+  
+  .stars svg {
+  margin-right: 2px;
+  }
+  
+  #cardinfo-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* background-color: #FFDAD1; */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  }
+  
+  #cardinfo-details h2 {
+  font-size: 2rem;
+  color: #E2725B;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  
+  #cardinfo-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  }
+  #cardinfo-details iframe {
+    width: 100%;
+    height: 610px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #cardinfo-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  }
+  
+  #cardinfo-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  }
+  
+  .rating-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+  
+  .rating-box .stars {
+  color: #E2725B;
+  }
+  
+  .rating-box .stars svg {
+  margin-right: 2px;
+  }
+  
+  .comment-button {
+  background-color: #E2725B;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  }
+  
+  .comment-button:hover {
+  background-color: #a64e3b;
+  }
+  
+  .MuiTextField-root {
+  margin-top: 20px;
+  }
+  
+  .MuiList-root {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiListItemButton-root {
+  border-bottom: 1px solid #eee;
+  }
+  
+  .MuiListItemText-primary {
+  font-size: 1rem;
+  color: #333;
+  }
+  
+  .MuiListItemText-secondary {
+  font-size: 0.8rem;
+  color: #888;
+  }
+  
+  .review-username {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+  font-style: italic;
+  font-weight: bold;
+  }
+  
+  .editor-icon,
+  .delete-icon {
+  cursor: pointer;
+  }
+  
+  .rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+  }
+  .rating-section {
+  margin-top: 20px;
+  }
+  .cardinfo-rating-item {
+  text-align: center;
+  }
+  .average-rating {
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  }
+  #outlined-controlled {
+  margin-top: 20px;
+  }
+  
+  .Stack-icons {
+    position: sticky;
+    gap: 10px;
+    top: 15px; 
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .Stack-icons .MuiFab-root {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .Stack-icons .MuiFab-root:hover {
+    transform: scale(1.1);
+  }
+  
+  .Stack-icons .addNew-icon, .Stack-icons .delete-icon, .Stack-icons .editor-icon {
+    color: #F9F9FB;
+    background-color:#E2725B;
+    transition: color 0.3s ease;
+    width: 35px;
+    height: 35px;
+  }
+  .Stack-icons .addNew-icon:hover, .Stack-icons .delete-icon:hover, .Stack-icons .editor-icon:hover {
+    background-color:#a64e3b;
+  }
+  
+  #alert-dialog-title {
+    color: #D22400A4;
+  }
+  #alert-dialog-description {
+    color: rgb(8, 8, 8);
+  }
+  
+  .dialog-buttonDelete:hover {
+    color:#a64e3b;
+  }
+  
+  .defined-average-rating {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .defined-average-rating h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    color: #4A4A4A;
+  }
+  
+  .defined-rating-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #E2725B; 
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #FFF7F5;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
